@@ -6,7 +6,7 @@ type Props = {
   seed?: string;
   large?: boolean;
 };
-
+// TEST
 function Avatar({ seed, large }: Props) {
   const { data: session } = useSession();
   return (
