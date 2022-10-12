@@ -73,7 +73,7 @@ function PostPage() {
           className="flex space-y-2 flex-col"
         >
           <textarea
-            {...register("comment")}
+            {...register("comment", { required: true })}
             disabled={!session}
             className="h-24 rounded-md border border-gray-200 p-2 pl-4 outline-none disabled:bg-gray-50"
             placeholder={
@@ -81,6 +81,7 @@ function PostPage() {
             }
           />
           <button
+            disabled={!session}
             type="submit"
             className="rounded-full bg-[#FF4401] p-3 font-semibold text-white disabled:bg-gray-200"
           >
