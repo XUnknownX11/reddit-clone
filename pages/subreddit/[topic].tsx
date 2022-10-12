@@ -10,7 +10,7 @@ function Subbreddit() {
     query: { topic },
   } = useRouter();
   return (
-    <div className="h-24 bg-red-400 p-8">
+    <div className="h-24 bg-[#FF4401] p-8">
       <Head>
         <title>Reddit Clone</title>
         <link rel="icon" href="/reddit-icon.svg" />
