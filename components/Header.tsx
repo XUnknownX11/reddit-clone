@@ -71,9 +71,6 @@ function Header() {
           onClick={() => signOut()}
           className="hidden lg:flex items-center cursor-pointer space-x-2 border-gray-100 p-2"
         >
-          <div className="relative h-5 w-5 flex-shrink-0">
-            <Image objectFit="contain" src={signinLogo} layout="fill" alt="" />
-          </div>
           <div>
             <p className="truncate">{session.user?.name}</p>
             <p className="text-gray-400">Karma 1,000</p>
@@ -85,9 +82,6 @@ function Header() {
           onClick={() => signIn()}
           className="hidden lg:flex items-center cursor-pointer space-x-2 border-gray-100 p-2"
         >
-          <div className="relative h-5 w-5 flex-shrink-0">
-            <img src={signinLogo} alt="" />
-          </div>
           <p className="text-gray-400 hover:text-[#FF4401]"> Sign In</p>
         </div>
       )}
