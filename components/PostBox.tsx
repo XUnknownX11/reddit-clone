@@ -145,7 +145,7 @@ function PostBox({ subreddit }: Props) {
             imageBoxOpen && "text-blue-300"
           }`}
         />
-        <LinkIcon className=" h-6 text-gray-300 " />
+        <LinkIcon className=" h-6 text-gray-300 hover:text-[#FF4401]" />
       </div>
       {watch("postTitle") && (
         <div className=" flex flex-col py-2">

@@ -31,9 +31,11 @@ function Header() {
       </div>
 
       <div className="mx-7 flex items-center xl:min-w-[300px]">
-        <HomeIcon className="h-5 w-5" />
-        <p className=" ml-2 hidden flex-1 lg:inline">Home</p>
-        <ChevronDownIcon className="h-5 w-5" />
+        <HomeIcon className="h-5 w-5 hover:text-[#FF4401]" />
+        <p className=" ml-2 hidden flex-1 lg:inline hover:text-[#FF4401] cursor-pointer">
+          Home
+        </p>
+        <ChevronDownIcon className="h-5 w-5 hover:text-[#FF4401] cursor-pointer" />
       </div>
       {/* Search Box */}
       <form className="flex flex-1 items-center space-x-2 border-gray-200 rounded-sm border bg-gray-100 px-3 py-1 ">
@@ -81,7 +83,7 @@ function Header() {
           <div className="relative h-5 w-5 flex-shrink-0">
             <Image objectFit="contain" src={signinLogo} layout="fill" alt="" />
           </div>
-          <p className="text-gray-400"> Sign In</p>
+          <p className="text-gray-400 hover:text-[#FF4401]"> Sign In</p>
         </div>
       )}
     </div>
