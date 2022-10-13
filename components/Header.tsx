@@ -86,7 +86,7 @@ function Header() {
           className="hidden lg:flex items-center cursor-pointer space-x-2 border-gray-100 p-2"
         >
           <div className="relative h-5 w-5 flex-shrink-0">
-            <Image objectFit="contain" src={signinLogo} layout="fill" alt="" />
+            <img src={signinLogo} alt="" />
           </div>
           <p className="text-gray-400 hover:text-[#FF4401]"> Sign In</p>
         </div>
