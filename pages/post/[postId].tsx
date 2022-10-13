@@ -53,11 +53,11 @@ function PostPage() {
 
     setValue("comment", "");
 
-    toast.success("Comment Posted!", { id: notification });
+    toast.success("✔️Comment Posted!✔️", { id: notification });
   };
 
   return (
-    <div className="mx-auto my-7 max-w-5xl">
+    <div className="mx-auto my-7 max-w-5xl pb-10">
       <Head>
         <title>Reddit Clone</title>
         <link rel="icon" href="/reddit-icon.svg" />

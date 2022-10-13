@@ -107,11 +107,11 @@ function PostBox({ subreddit }: Props) {
       setValue("postTitle", "");
       setValue("subreddit", "");
 
-      toast.success("New Post Created", {
+      toast.success("✔️New Post Created✔️", {
         id: notification,
       });
     } catch (error) {
-      toast.error("whoops somthing whent wrong", {
+      toast.error("❌whoops somthing whent wrong❌", {
         id: notification,
       });
     }
