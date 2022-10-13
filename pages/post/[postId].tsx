@@ -39,7 +39,6 @@ function PostPage() {
 
   const onSubmit: SubmitHandler<FromData> = async (data) => {
     // post comment here...
-    console.log(data);
 
     const notification = toast.loading("Posting your comment");
 
@@ -47,10 +46,10 @@ function PostPage() {
       variables: {
         post_id: router.query.postId,
         username: session?.user?.name,
-        text: data.comment,
+        text: data?.comment,
       },
     });
-
+    // @ts-ignore
     setValue("comment", "");
 
     toast.success("✔️Comment Posted!✔️", { id: notification });
@@ -69,10 +68,12 @@ function PostPage() {
           <span className="text-[#FF4401] ">{session?.user?.name}</span>
         </p>
         <form
+          // @ts-ignore
           onSubmit={handleSubmit(onSubmit)}
           className="flex space-y-2 flex-col"
         >
           <textarea
+            // @ts-ignore
             {...register("comment", { required: true })}
             disabled={!session}
             className="h-24 rounded-md border border-gray-200 p-2 pl-4 outline-none disabled:bg-gray-50"
