@@ -31,10 +31,15 @@ function Header() {
       </div>
 
       <div className="mx-7 flex items-center xl:min-w-[300px]">
-        <HomeIcon className="h-5 w-5 hover:text-[#FF4401]" />
-        <p className=" ml-2 hidden flex-1 lg:inline hover:text-[#FF4401] cursor-pointer">
-          Home
-        </p>
+        <Link href="/">
+          <HomeIcon className="h-5 w-5 hover:text-[#FF4401]" />
+        </Link>
+        <Link href="/">
+          <p className=" ml-2 hidden flex-1 lg:inline hover:text-[#FF4401] cursor-pointer">
+            Home
+          </p>
+        </Link>
+
         <ChevronDownIcon className="h-5 w-5 hover:text-[#FF4401] cursor-pointer" />
       </div>
       {/* Search Box */}
