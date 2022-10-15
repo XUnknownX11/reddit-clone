@@ -1,4 +1,5 @@
 configurationset:
   - configuration:
       name: postgresql_config
-      uri: *YAML_AUTH
+      uri: *YAML_AUTH 
+      # Switched
